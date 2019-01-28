@@ -37,6 +37,13 @@ border: 3px dotted rosybrown
 padding: 10px
 */
 
+function bling(){
+    var wormElem = document.getElementById('worm');
+    wormElem.style.fontSize = "28px"
+    wormElem.style.color = '#33cc33'
+    wormElem.style.border = '3px dotted rosybrown'
+    wormElem.style.padding = '10px';
+}
 
 
 //4. Beet Cakes by Dre
