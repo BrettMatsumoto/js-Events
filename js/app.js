@@ -115,11 +115,11 @@ function showBio(){
     showSign.innerHTML = grimace.sign
     showBloo.innerHTML = grimace.bloodtype
     showHob.innerHTML = grimace.hobbies
-    bio.appendChild(showName)
-    bio.appendChild(showAge)
-    bio.appendChild(showSign)
-    bio.appendChild(showBloo)
-    bio.appendChild(showHob)
+    // bio.appendChild(showName)
+    // bio.appendChild(showAge)
+    // bio.appendChild(showSign)
+    // bio.appendChild(showBloo)
+    // bio.appendChild(showHob)
 }
 
 //8. Fortune Cookie
@@ -127,6 +127,16 @@ function showBio(){
 
 var messages = ["That wasn't chicken.", "The fortune you seek is in another cookie.", "Tell your friends about DevLeague Prep.", "You will be doing many events tonight.", "Don't let statistics do a number on you.", "Buy your instructor a drink and receive double fortune.", "Is a turtle without a shell naked or homeless?"];
 
+fortune.addEventListener('click', showMess())
+
+function randomNum(){
+    return Math.floor(Math.random()*messages.length+1)
+}
+
+function showMess(){
+    var showMessage = document.getElementById('showFortune')
+    showMessage.innerHTML = messages[randomNum()]
+}
 
 //9. Open Sesame
 /*Add an event listener to the `secret` input element that will capitalize letter inputs in the form. Hint, you'll be using the keyup event*/
