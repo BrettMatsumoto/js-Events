@@ -102,6 +102,25 @@ var grimace = {
     hobbies: ['knitting', 'scrapbooking', 'mixed martial arts']
 };
 
+bio.addEventListener('click', showBio())
+
+function showBio(){
+    var showName = document.getElementById('bio')
+    var showAge = document.getElementById('bio')
+    var showSign = document.getElementById('bio')
+    var showBloo = document.getElementById('bio')
+    var showHob = document.getElementById('bio')
+    showName.innerHTML = grimace.name 
+    showAge.innerHTML = grimace.age
+    showSign.innerHTML = grimace.sign
+    showBloo.innerHTML = grimace.bloodtype
+    showHob.innerHTML = grimace.hobbies
+    bio.appendChild(showName)
+    bio.appendChild(showAge)
+    bio.appendChild(showSign)
+    bio.appendChild(showBloo)
+    bio.appendChild(showHob)
+}
 
 //8. Fortune Cookie
 /*Add an event listener to the `fortune` button that will generate a random message in the `showFortune` h3 element after clicking on the button*/
