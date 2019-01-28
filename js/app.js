@@ -141,3 +141,9 @@ function showMess(){
 //9. Open Sesame
 /*Add an event listener to the `secret` input element that will capitalize letter inputs in the form. Hint, you'll be using the keyup event*/
 
+
+secret.addEventListener('keyup', capIt);
+
+function capIt(){
+    secret.value = secret.value.toUpperCase();
+}
