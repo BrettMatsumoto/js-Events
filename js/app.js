@@ -80,6 +80,15 @@ function newImg(){
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
 
+menu.addEventListener('click', noDessert())
+
+function noDessert(){
+    if (document.getElementById('dessert').style.visibility === 'visible'){
+        document.getElementById('dessert').style.visibility = 'hidden'
+    } else {
+        document.getElementById('dessert').style.visitibility = 'visible'
+    }
+}
 
 
 //7. The Purple Monster
