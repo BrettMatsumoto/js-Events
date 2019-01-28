@@ -51,6 +51,13 @@ function bling(){
 
 var missing = "1 Big ol' beet";
 
+recipe.addEventListener('click', addBeet());
+
+function addBeet(){
+    var addIngre = document.getElementById('ingredient')
+    addIngre.innerHTML = missing
+}
+
 
 
 //5. Pug Life
