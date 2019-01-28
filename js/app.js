@@ -66,7 +66,16 @@ function addBeet(){
 // Use this for the new image:
 // 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
 
+puggy.addEventListener('mouseover', newImg())
 
+function newImg(){
+    if (document.getElementById('puggy').src === 'https://bit.ly/2RhOvm4'){
+        var newPug = document.getElementById('puggy')
+        newPug.src = 'https://media.giphy.com/media/12pJ8OxSWwO86Y/giphy.gif'
+    } else {
+        var newPug = document.getElementById('puggy').src === 'https://bit.ly/2RhOvm4'
+    } 
+}
 
 //6. DevLeague Lunch Wagon
 /*Add an event listener to the `menu` div element that will display and hide the dessert item after clicking on 'Today's Special'*/
